@@ -64,14 +64,15 @@
         <source src="music/star.m4a" type="M4A File (.m4a)">
     
     </audio>
-    <button id="startMusic">Through Don's lense</button>
+    <button id="startMusic">Through Don's lens</button>
 
     <script>
         const music=document.getElementById("byMusic");
         const button=document.getElementById("startMusic");
 
-        button.addEventListener("click",()=>{
+        button.addEventListener("click",function()=>{
             music.play();
+            button.style.display="none";//hides button after clickimg
         });
     </script>
 
